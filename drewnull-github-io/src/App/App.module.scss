@@ -1,0 +1,64 @@
+@media (prefers-color-scheme: dark) {
+    :root{
+        --color-background-primary: #222;
+        --color-background-secondary: #444;
+        --color-text-primary: #ddd;
+        --color-text-secondary: #bbb;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-background-primary: #ddd;
+        --color-background-secondary: #bbb;
+        --color-text-primary: #222;
+        --color-text-secondary: #444;
+    }
+}
+
+.App {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  &_dark {
+    --color-background-primary: #222;
+    --color-background-secondary: #444;
+    --color-text-primary: #ddd;
+    --color-text-secondary: #bbb;
+  }
+  &_light {
+    --color-background-primary: #ddd;
+    --color-background-secondary: #bbb;
+    --color-text-primary: #222;
+    --color-text-secondary: #444;
+  }
+}
+
+.ThemeButton {
+    background-color: transparent;
+    border: {
+        color: hsla(0, 0, 50, 0);
+        style: solid;
+        width: 2px;
+    }
+    color: inherit;
+    display: inline-block;
+    font-size: inherit;
+    opacity: 0.8;
+    padding: 0.25rem 0.5rem;
+    transition: border-color ease-in-out 0.2s, opacity ease-in-out 0.2s;
+    &:focus {
+        outline: 2px dotted hsl(0, 0, 50);
+    }
+    &_active {
+        border-color: hsla(0, 0, 50, 100);
+        transition: border-color ease-in-out 0.2s;
+    }
+    &_inactive {
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity ease-in-out 0.2s;
+        }
+    }
+}
