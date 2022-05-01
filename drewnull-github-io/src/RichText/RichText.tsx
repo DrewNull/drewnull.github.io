@@ -1,13 +1,13 @@
-import styles from './RichText.module.css'
+import styles from './RichText.module.scss'
 
 export interface RichTextProps {
-  children: any
+    children: any
 }
 
 export function RichText(props: RichTextProps) {
-  return (
-    <>
-      <div className={styles.RichText}>{props.children}</div>
-    </>
-  )
+    return (
+        <>
+            <div className={styles.RichText}>{props.children}</div>
+        </>
+    )
 }

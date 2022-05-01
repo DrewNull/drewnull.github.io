@@ -1,0 +1,39 @@
+@import '../Styles/core';
+
+.header {
+    border-bottom: 2px solid var(--color-neutral-100);
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    @include media-small {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        padding: 1.5rem 0;
+    }
+    @include media-medium {
+        margin-bottom: 4rem;
+        padding: 2rem 0;
+    }
+    @include media-large {
+        margin-bottom: 5rem;
+        padding: 2.5rem 0;
+    }
+}
+
+.logo {
+    margin: 1rem 0;
+    @include media-small {
+        margin: 0;
+    }
+}
+
+.logoTextBig {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.logoTextSmall {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
