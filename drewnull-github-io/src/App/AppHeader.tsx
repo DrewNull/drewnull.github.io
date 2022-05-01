@@ -10,7 +10,7 @@ export function AppHeader(props: AppHeaderProps) {
                     <div className={styles.logo}>
                         <div className={styles.logoTextBig}>Drew Null</div>
                         <div className={styles.logoTextSmall}>
-                            Web and Commerce Software Engineer in Chicago, IL
+                            Web and Commerce Software Engineer in Chicago
                         </div>
                     </div>
                     <ThemeControl />
