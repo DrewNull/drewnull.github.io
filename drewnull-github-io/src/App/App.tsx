@@ -43,7 +43,7 @@ export function App(props: AppProps) {
                                 <li>
                                     Code with me at{' '}
                                     <a
-                                        href='https://github.com/DrewNull'
+                                        href='https://github.com/drewnull'
                                         rel='noopener noreferrer'
                                         target='_blank'
                                     >
