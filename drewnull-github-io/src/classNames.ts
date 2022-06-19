@@ -1,5 +1,5 @@
 export function classNames(
-  value: Array<string | undefined>
+    value: Array<string | undefined>
 ): string | undefined {
-  return value?.join(" ")
+    return value?.join(' ')
 }

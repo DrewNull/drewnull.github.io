@@ -1,9 +1,11 @@
 .ThemeControl {
     align-items: center;
     display: flex;
-    gap: 1rem;
+    font-size: 0.875rem;
+    font-weight: 200;
 }
-
 .label {
+    display: block;
     font-style: italic;
+    padding: 0.5rem 1rem 0.5rem 0;
 }

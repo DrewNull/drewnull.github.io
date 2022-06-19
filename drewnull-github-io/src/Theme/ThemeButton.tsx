@@ -14,11 +14,14 @@ export function ThemeButton(props: ThemeButtonProps) {
                     ? styles.ThemeButton_active
                     : styles.ThemeButton_inactive,
             ])}
-            onClick={() => themeContext.setTheme(props.theme)}
+            onClick={setTheme}
         >
             {props.children}
         </button>
     )
+    function setTheme() {
+        themeContext.setTheme(props.theme)
+    }
 }
 
 export interface ThemeButtonProps {

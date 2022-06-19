@@ -1,38 +1,19 @@
-@import '../Styles/core';
-
-:root {
-    --color-neutral-0: #{color-neutral(0)};
-    --color-neutral-100: #{color-neutral(100)};
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        @include dark-mode();
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        @include light-mode();
-    }
-}
-
-*:focus {
-    outline: 2px dotted var(--color-neutral-100);
-}
-
 .App {
-    background-color: var(--color-background-primary);
-    color: var(--color-text-primary);
+    display: grid;
+    gap: 5vh;
     min-height: 100vh;
-    &_dark {
-        @include dark-mode();
-    }
-    &_light {
-        @include light-mode();
-    }
+    padding: 5vh 5vw;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .main {
-    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+}
+
+.footer {
+    align-self: end;
+    place-self: center;
 }
