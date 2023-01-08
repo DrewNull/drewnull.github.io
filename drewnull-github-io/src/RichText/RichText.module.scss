@@ -9,6 +9,7 @@
     a {
         color: inherit;
         opacity: 0.8;
+        text-decoration-thickness: 0.5px;
         text-underline-offset: 0.25rem;
         transition: opacity ease-in-out 0.2s;
         &:hover {

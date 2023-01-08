@@ -3,7 +3,6 @@ import styles from './App.module.scss'
 import { classNames } from '../classNames'
 import { RichText } from '../RichText/RichText'
 import { Theme } from '../Theme/Theme'
-import { ThemeControl } from '../Theme/ThemeControl'
 import {
     ThemeContext,
     ThemeContextProps,
@@ -84,16 +83,6 @@ export function App(props: AppProps) {
                                 </a>
                             </li>
                             <li>
-                                Read my occasional post at the{' '}
-                                <a
-                                    href='https://world.optimizely.com/blogs/drew-null'
-                                    rel='noopener noreferrer'
-                                    target='_blank'
-                                >
-                                    Optimizely Developer Community Blog
-                                </a>
-                            </li>
-                            <li>
                                 Visit my wife's website:{' '}
                                 <a
                                     href='https://www.lipengchen.com'
@@ -104,22 +93,8 @@ export function App(props: AppProps) {
                                 </a>
                             </li>
                         </ul>
-                        <p>
-                            Thanks for visiting{' '}
-                            <span
-                                style={{
-                                    display: 'inline-block',
-                                    lineHeight: '1em',
-                                    margin: '0 0.5em',
-                                    transform: 'rotateZ(90deg)',
-                                }}
-                            >
-                                :)
-                            </span>
-                        </p>
+                        <p>Thanks for visiting :)</p>
                     </RichText>
-                    <hr />
-                    <ThemeControl />
                 </main>
             </div>
         </ThemeContext.Provider>
